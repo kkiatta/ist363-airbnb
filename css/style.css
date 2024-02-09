@@ -53,13 +53,12 @@ nav a:hover, nav a:focus{
 .btn-ui{
     padding: 1rem;
     background-color:transparent;
-    border: 1px var(--airbnb-pink);
     cursor: pointer;
 }
 .btn-ui svg{
     width: 2tem;
     height: auto;
-    fill: var(--airbnb-pink);
+    border: 1px var(--airbnb-pink);
 }
 .overlay {
     width: 100vw; /*v = viewport*/
@@ -73,4 +72,20 @@ nav a:hover, nav a:focus{
 }
 .overlay.active{
     left: 0;
+}
+
+.room{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom:1px solid black;
+}
+.room--name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.room--description{
+    font-size: 1rem;
+    font-weight:lighter;
+    font-family: Arial, Helvetica, sans-serif;
 }
