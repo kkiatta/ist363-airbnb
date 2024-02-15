@@ -56,7 +56,7 @@ nav a:hover, nav a:focus{
     cursor: pointer;
 }
 .btn-ui svg{
-    width: 2tem;
+    width: 2rem;
     height: auto;
     border: 1px var(--airbnb-pink);
 }
@@ -88,4 +88,13 @@ nav a:hover, nav a:focus{
     font-size: 1rem;
     font-weight:lighter;
     font-family: Arial, Helvetica, sans-serif;
+}
+.category{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.category h2{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
 }
