@@ -7,7 +7,7 @@ const filteredNumbers = numbers.filter((number) => {
     return number < 10;
 });// end of filter
 
-console.log({filteredNumbers});
+//console.log({filteredNumbers});
 
 //example #2
 
@@ -24,7 +24,7 @@ const people = [
     return person.age < 30;
   }); // end of filter
 
-  console.log({filteredPeople})
+  //console.log({filteredPeople})
 
   //example 3 
 
@@ -41,22 +41,27 @@ const people = [
     return cars.make === "Ford";
   }); //emd of filter
 
-  console.log({filteredCars})
+  //console.log({filteredCars})
 
    //example 4
+   const filterGames = (games, monthIndex) => {
+    const filterGames = games.filter((game) => {
+      const dateObject = new Date(game.date)
+      return dateObject.getMonth() === monthIndex
+    })
+   console.log({filterGames})
+  } //end of filterGames
+  // import schedule.json,
+  // then convert it to json
+  // then do something with itS
 
-   const schedule = [
-    {
-        "date": "2023-10-27",
-        "opponent": "Deamon",
-        "location": "JMA Wireless Dome",
-        "exhibition": true
-    },
-    {
-        "date": "2023-11-01",
-        "opponent": "College of St. Rose",
-        "location": "JMA Wireless Dome",
-        "exhibition": true
-    },
-    // etc.
-];
+  fetch('js/schedule.json')
+    .then ((response) => {
+      return response.json()
+    })
+    .then((data) =>{
+      //console.lo({data})
+      filterGames(data, 11)
+    })
+    .catch() // promise
+ 
