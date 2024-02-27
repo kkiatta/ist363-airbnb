@@ -1,4 +1,8 @@
+@use './header';
+@use './footer';
+
 $color__orange: #d74100;
+$font__primary: Arial, sans-serif;
 
 html, body, h1,h2,h3,h4,h5,h6, p, ul, li, button{
     margin: 0;
@@ -18,14 +22,6 @@ body{
     /*background-color:navajowhite;*/
     background-color:$color__orange;
 }
-header{
-    background-color: whitesmoke;
-    padding: 1rem; /*rem = root front size, 1 rem = 16px*/ /*use metric quater 3/4*/
-    display: flex;
-    justify-content: space-between; /* space thing evenly*/
-    align-items: center;/* center yourself at axis point*/
-    
-}
 .logo{ 
     width: 150px;
     height: auto; 
@@ -35,24 +31,27 @@ header h1{
     font-size: 2.5rem;
 }
 nav{
-    /*background*/
+    //background-color: $color__orange;
+    ul{
+        display: flex;
+        gap:1rem;
+        li {
+            a{
+                font-family: $font__primary;
+                font-weight: bold;
+                font-size: 1rem;
+                color: black;
+                text-decoration: none;
+                &:hover,
+                &:focus {
+                    color: $color__orange;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
-nav ul{
-    display: flex;
-    gap: 1rem;
-}
-nav a{
-    font-family: Arial;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-    transition: all .25s;
-}
-nav a:hover, nav a:focus{
-    color: var(--airbnb-pink);
-    text-decoration: underline;
-}
+
 .btn-ui{
     padding: 1rem;
     background-color:transparent;

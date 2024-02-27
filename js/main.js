@@ -3,6 +3,7 @@
 const menuBtn = document.getElementById("menuBtn");// match const name with id name
 const mobileMenu = document.getElementById("mobileMenu");
 const closeBtn = document.getElementById("closeBtn")
+const contentDiv = document.getElementById("content")
 // "event name", callback function
 menuBtn.addEventListener("click", function() {
     //console.log("click")
@@ -39,7 +40,7 @@ closeBtn.addEventListener("click", function() {
     roomArticle.appendChild(roomPriceElement);
     roomArticle.appendChild(roomGuestsElement);
     
-    document.body.appendChild(roomArticle);
+    contentDiv.appendChild(roomArticle);
     }); 
     // end of forEach
  } //end of renderProperties
@@ -102,7 +103,7 @@ filteredProperties.forEach(property => {
 
  // 2. loop and append properties
     
-    document.body.appendChild(sectionElement)
+    contentDiv.appendChild(sectionElement)
 } //end of displayCategory
 
 Promise.all([
