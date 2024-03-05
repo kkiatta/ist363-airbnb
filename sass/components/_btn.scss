@@ -1,5 +1,31 @@
 @use '../abstracts/vars';
 
+.btn{
+    color: azure;
+    padding: 1rem;
+    font-family: vars.$font__primary;
+    font-size: 1rem;
+    font-weight:bold;
+    background-color: grey;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    &--primary {
+        background-color: vars.$color__primary;
+    }
+    &--secondary{
+        background-color: transparent;
+        border: 1px solid black;
+        color: black;
+    }
+    &--delete{
+        color: azure;
+        background-color: vars.$color__orange;
+    }
+    &--small{
+
+    }
+}
 .btn-ui{
     padding: 1rem;
     background-color:transparent;

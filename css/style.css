@@ -327,68 +327,66 @@ body {
   font-family: Arial, Verdana, sans-serif;
 }
 
-h1 {
-  font-size: 2rem;
+.heading {
   font-family: Arial, Verdana, sans-serif;
   font-weight: bold;
-  color: #FF385C;
+  color: black;
+}
+.heading--1 {
+  font-size: 2rem;
 }
 @media (min-width: 700px) {
-  h1 {
+  .heading--1 {
     font-size: 2.5rem;
   }
 }
 @media (min-width: 1024px) {
-  h1 {
+  .heading--1 {
     font-size: 3rem;
   }
 }
 @media (min-width: 1140px) {
-  h1 {
-    font-size: 3.5rem;
+  .heading--1 {
+    font-size: 3.5;
   }
 }
-
-h2 {
+.heading--2 {
   font-size: 1.5rem;
   font-family: Arial, Verdana, sans-serif;
   font-weight: bold;
-  color: #FF385C;
 }
 @media (min-width: 700px) {
-  h2 {
+  .heading--2 {
     font-size: 1.75rem;
   }
 }
 @media (min-width: 1024px) {
-  h2 {
+  .heading--2 {
     font-size: 2rem;
   }
 }
 @media (min-width: 1140px) {
-  h2 {
+  .heading--2 {
     font-size: 2.25rem;
   }
 }
-
-h3 {
+.heading--3 {
   font-size: 1.1rem;
   font-family: Arial, Verdana, sans-serif;
   font-weight: bold;
-  color: #FF385C;
 }
 @media (min-width: 700px) {
-  h3 {
+  .heading--3 {
     font-size: 1.3rem;
   }
 }
 @media (min-width: 1024px) {
-  h3 {
+  .heading--3 {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 1140px) {
-  h3 {
+  .heading--3 {
     font-size: 1.7rem;
   }
 }
@@ -399,6 +397,29 @@ p {
   color: black;
 }
 
+.btn {
+  color: azure;
+  padding: 1rem;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: grey;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+.btn--primary {
+  background-color: #FF385C;
+}
+.btn--secondary {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+.btn--delete {
+  color: azure;
+  background-color: #d74100;
+}
 .btn-ui {
   padding: 1rem;
   background-color: transparent;
