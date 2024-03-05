@@ -57,10 +57,13 @@ const displayCategory = (category, properties) => {
     const sectionElement = document.createElement('section');
     sectionElement.classList.add('category');
 
+    const containerDiv = document.createElement('div');
+    containerDiv.classList.textContent = category.label.plural
+
     const sectionTitle = document.createElement('h2');
     sectionTitle.textContent = category.label.plural;
 
-    sectionElement.appendChild(sectionTitle);
+    containerDiv.appendChild(sectionTitle);
 
  //console.log(category.label.singular)
  // 1. filter properties             loop
@@ -94,7 +97,7 @@ filteredProperties.forEach(property => {
 
     articleElement.innerHTML = propertyHtml;
 
-    sectionElement.appendChild(articleElement);
+    containerDiv.appendChild(articleElement);
 
 }); // end of forEach
 
@@ -102,7 +105,7 @@ filteredProperties.forEach(property => {
 //articleElement.classList.add('property');
 
  // 2. loop and append properties
-    
+    sectionElement.appendChild(containerDiv)
     contentDiv.appendChild(sectionElement)
 } //end of displayCategory
 

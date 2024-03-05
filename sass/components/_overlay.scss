@@ -1,0 +1,13 @@
+.overlay {
+    width: 100vw; /*v = viewport*/
+    height: 100vh;
+    background-color: beige;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    z-index: 1000;
+    transition: all .5s;
+    &.active{
+        left: 0;
+    }
+}
