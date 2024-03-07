@@ -446,7 +446,22 @@ p {
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
-  background-color: yellow;
+  background-color: transparent;
+}
+@media (min-width: 700px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media (min-width: 1140px) {
+  .container {
+    width: 1140px;
+  }
 }
 
 .logo {
@@ -499,6 +514,43 @@ nav ul li a:hover, nav ul li a:focus {
   font-size: 1rem;
   font-weight: lighter;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.slider {
+  background-color: lightblue;
+}
+.slider__container {
+  background-color: antiquewhite;
+  overflow-x: scroll;
+  padding-left: 1rem;
+}
+@media (min-width: 700px) {
+  .slider__container {
+    padding-left: calc((100% - 700px) / 2);
+  }
+}
+@media (min-width: 1024px) {
+  .slider__container {
+    padding-left: calc((100% - 1024px) / 2);
+  }
+}
+@media (min-width: 1140px) {
+  .slider__container {
+    padding-left: calc((100% - 1140px) / 2);
+  }
+}
+.slider__grid {
+  background-color: pink;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 1rem;
+  grid-auto-flow: column;
+}
+.slider__item {
+  background-color: white;
+  width: 300px;
+  height: 400px;
 }
 
 header {
